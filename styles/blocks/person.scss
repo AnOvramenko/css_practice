@@ -7,8 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
   }
 
   &__photo {
@@ -17,10 +15,6 @@
     border-radius: 50%;
     transition: transform, border-radius 1s;
     margin-bottom: 8px;
-    
-    &:hover {
-      border-radius: 60px;
-    }
   }
 
   &__rank {
@@ -84,5 +78,9 @@
     background-color: #EEEEEE;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
+  }
+
+  &:hover :first-child {
+    border-radius: 60px;
   }
 }
