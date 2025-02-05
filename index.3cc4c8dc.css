@@ -4,8 +4,8 @@ body {
 
 .people {
   justify-content: center;
+  margin-block: 30px;
   margin-inline: 30px;
-  padding-top: 30px;
   display: flex;
 }
 
@@ -40,10 +40,6 @@ body {
   height: 100%;
   margin-bottom: 8px;
   transition: transform, border-radius 1s;
-}
-
-.person__photo:hover {
-  border-radius: 60px;
 }
 
 .person__rank {
@@ -104,5 +100,9 @@ body {
   background-color: #eee;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
+}
+
+.person:hover :first-child {
+  border-radius: 60px;
 }
 /*# sourceMappingURL=index.3cc4c8dc.css.map */
