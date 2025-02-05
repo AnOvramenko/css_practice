@@ -1,0 +1,85 @@
+.person {
+  transition: transform 1s;
+  overflow: hidden;
+
+  &__media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: transform, border-radius 1s;
+    margin-bottom: 8px;
+    
+    &:hover {
+      border-radius: 60px;
+    }
+  }
+
+  &__rank {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    right: 10px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 19.2px;
+    color: #8B0000;
+  }
+
+  &__name {
+    display: block;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2F4F4F;
+    font-weight: 700;
+  }
+
+  &__extra {
+    position: absolute;
+    display: block;
+    width: 100%;
+    font-family: Arial;
+    font-size: 21.6px;
+    line-height: 24.84px;
+    text-align: center;
+    padding-bottom: 12px;
+
+    transition: transform 1s;
+  }
+
+  &__details {
+    position: relative;
+  }
+
+  &:hover {
+    height: fit-content;
+    transform: scale(1.25);
+    z-index: 1;
+    overflow: visible;
+    background-color: #EEEEEE;
+    border-radius: 12px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  &:hover :last-child {
+    background-color: #EEEEEE;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}

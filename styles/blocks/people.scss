@@ -1,0 +1,19 @@
+.people {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin-inline: 30px;
+
+  
+  &__content {
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 40px 30px;
+
+    @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 200px);
+    }
+  }
+
+}
