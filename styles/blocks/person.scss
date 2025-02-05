@@ -27,7 +27,7 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
+    border-radius: 50% !important;
     right: 10px;
     display: block;
     text-align: center;
@@ -47,9 +47,11 @@
     text-align: center;
     color: #2F4F4F;
     font-weight: 700;
+    margin-bottom: 10.8px;
   }
 
   &__extra {
+    box-sizing: border-box;
     position: absolute;
     display: block;
     width: 100%;
@@ -58,6 +60,7 @@
     line-height: 24.84px;
     text-align: center;
     padding-bottom: 12px;
+    padding-inline: 10px;
 
     transition: transform 1s;
   }
